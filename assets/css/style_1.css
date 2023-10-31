@@ -11,6 +11,7 @@ body{
 .container{
   width: 100%;
   height: 100vh;
+  bakcground-color: dark;
   background-image: url(../images/Baabfest_logo.png);
   background-position: center;
   background-size: cover;
