@@ -27,48 +27,27 @@
       hour = minute * 60,
       day = hour * 24;
 
-	let countDown = new Date('Nov 18, 2023 10:00:00').getTime(),
-    x = setInterval(function() {    
+let countDown = new Date('Nov 17, 2023 10:00:00').getTime(),
+x = setInterval(function() {    
 
-      let now = new Date().getTime(),
-          distance = countDown - now;
+  let now = new Date().getTime(),
+      distance = countDown - now;
 
+  // Reset counter to zero when it reaches zero
+  if (distance < 0) {
+      clearInterval(x);
+      document.getElementById('days').innerText = 0,
+        document.getElementById('hours').innerText = 0,
+        document.getElementById('minutes').innerText = 0,
+        document.getElementById('seconds').innerText = 0;
+  } else {
       document.getElementById('days').innerText = Math.floor(distance / (day)),
         document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
         document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
         document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+  }
 
-      //do something later when date is reached
-      //if (distance < 0) {
-      //  clearInterval(x);
-      //  'ARHERUWA (To Make Home)'!;
-      //}
-
-    }, second)
-
-	$(function() {
-        $("#tabs").tabs();
-    });
-	
-
-	$('.schedule-filter li').on('click', function() {
-        var tsfilter = $(this).data('tsfilter');
-        $('.schedule-filter li').removeClass('active');
-        $(this).addClass('active');
-        if (tsfilter == 'all') {
-            $('.schedule-table').removeClass('filtering');
-            $('.ts-item').removeClass('show');
-        } else {
-            $('.schedule-table').addClass('filtering');
-        }
-        $('.ts-item').each(function() {
-            $(this).removeClass('show');
-            if ($(this).data('tsmeta') == tsfilter) {
-                $(this).addClass('show');
-            }
-        });
-    });
-
+}, second)
 
 	// Window Resize Mobile Menu Fix
 	mobileNav();
