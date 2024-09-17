@@ -1,10 +1,3 @@
-/*
-
-Tooplate 2125 ArtXibition
-
-https://www.tooplate.com/view/2125-artxibition
-
-*/
 
 /* ---------------------------------------------
 Table of contents
@@ -49,7 +42,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
   display: block;
   clear: both;
   visibility: hidden;
-  line-height: 0.5;
+  line-height: 0;
   height: 0;
 }
 
@@ -82,7 +75,7 @@ header, nav, section, article, aside, footer, hgroup {
 html, body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  background-color: rgb(75, 75, 75);
+  background-color: #fff;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -93,7 +86,7 @@ a {
   text-decoration: none !important;
 }
 
-h1, h2, h3, h4, h5, h6, h7 {
+h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -107,10 +100,10 @@ ul {
 }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 25px;
-  color: whitesmoke;
-  font-weight: 400;
+  color: #2a2a2a;
+  font-weight: 300;
 }
 
 /* 
@@ -120,7 +113,7 @@ global styles
 */
 html,
 body {
-  background:rgb(25, 25, 25);
+  background: #fff;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -134,7 +127,7 @@ body {
   color: #fff;
 }
 
-@media (max-width: auto) {
+@media (max-width: 991px) {
   html, body {
     overflow-x: hidden;
   }
@@ -159,7 +152,7 @@ body {
 .section-heading h2 {
   font-size: 30px;
   font-weight: 800;
-  color: whitesmoke;
+  color: #2a2a2a;
   text-transform: capitalize;
   letter-spacing: 0.5px;
   margin-top: 0px;
@@ -171,19 +164,19 @@ body {
 }
 
 .dark-bg h2 {
-  color: rgb(27, 27, 27);
+  color: #fff;
 }
 
 .dark-bg p {
-  color: rgb(27, 27, 27);
+  color: #fff;
 }
 
 .main-white-button a {
   display: inline-block;
   font-size: 14px;
   padding: 12px 18px;
-  background: linear-gradient( 135deg, black 10%, grey 100%);
-  color: #fff;
+  background-color: #fff;
+  color: #2a2a2a;
   text-align: center;
   font-weight: 500;
   text-transform: capitalize;
@@ -191,31 +184,29 @@ body {
 }
 
 .main-white-button a:hover {
-  background: linear-gradient( 135deg, grey 10%, black 100%);
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .main-dark-button a {
   display: inline-block;
   font-size: 14px;
   padding: 12px 18px;
-  background: linear-gradient( 135deg, black 10%, grey 100%);
+  background-color: #343a3e;
   color: #fff;
-  text-align: right;
+  text-align: center;
   font-weight: 500;
   text-transform: capitalize;
   transition: all .3s;
 }
 
 .main-dark-button a:hover {
-  background: linear-gradient( 135deg, grey 10%, black 100%);
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 
 .text-button a {
   font-size: 14px;
-  color: maroon;
+  color: #7c838b;
   transition: all .3s;
 }
 
@@ -226,7 +217,7 @@ body {
 }
 
 .text-button a:hover {
-  color: goldenrod;
+  color: #343a3e;
 }
 
 .text-button a:hover i {
@@ -240,6 +231,25 @@ header
 --------------------------------------------- 
 */
 
+.pre-header {
+  background-color: #f0f0f1;
+  padding: 10px 0px;
+}
+
+.pre-header span {
+  font-size: 13px;
+  color: #2a2a2a;
+  font-weight: 500;
+}
+
+.pre-header .text-button {
+  text-align: right;
+}
+
+.pre-header .text-button a {
+  color: #2a2a2a;
+}
+
 .header-area {
   position: relative;
   top: 0px;
@@ -247,7 +257,7 @@ header
   right: 0px;
   z-index: 100;
   height: 80px;
-  background: rgb(27, 27, 27);
+  background: #fff;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
@@ -261,9 +271,9 @@ header
 
 .header-area .main-nav .logo {
   line-height: 80px;
-  color: maroon;
+  color: #656c74;
   font-size: 28px;
-  font-weight: 900;
+  font-weight: 700;
   float: left;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -273,7 +283,7 @@ header
 
 .header-area .main-nav .logo em {
   font-style: normal;
-  color: goldenrod;
+  color: #2a2a2a;
   font-weight: 900;
 }
 
@@ -299,7 +309,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 14px;
-  color: whitesmoke;
+  color: #2a2a2a;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -312,7 +322,7 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: maroon!important;
+  color: #656c74!important;
   opacity: 1;
 }
 
@@ -324,7 +334,7 @@ header
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: goldenrod;
+  background-color: #656c74;
   content: '';
   top: -20px;
   left: 0;
@@ -332,8 +342,8 @@ header
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: maroon!important;
-  opacity: 0.5;
+  color: #656c74!important;
+  opacity: 1;
 }
 
 .header-area .main-nav .menu-trigger {
@@ -376,7 +386,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: maroon;
+  background-color: #1e1e1e;
   display: block;
   position: absolute;
   width: 30px;
@@ -387,7 +397,7 @@ header
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: maroon;
+  background-color: #1e1e1e;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -474,15 +484,15 @@ header
     display: none;
   }
   .header-area .main-nav .logo {
-    color: whitesmoke;
+    color: #1e1e1e;
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: maroon !important;
+    color: #656c74!important;
     opacity: 1;
   }
   .header-area {
-    background-color: rgb(27, 27, 27)7;
+    background-color: #f7f7f7;
     padding: 0px 15px;
     height: 80px;
     box-shadow: none;
@@ -514,12 +524,12 @@ header
     border-top: 1px solid #eee;
   }
   .header-area.header-sticky .nav {
-    margin-top: 10px !important;
+    margin-top: 80px !important;
   }
   .header-area .main-nav .nav li {
     width: 100%;
-    background: rgb(27, 27, 27);
-    border-bottom: 1px solid transparent;
+    background: #fff;
+    border-bottom: 1px solid #eee;
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
@@ -528,12 +538,12 @@ header
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
-    background: rgb(27, 27, 27) !important;
-    color: whitesmoke !important;
+    background: #f7f7f7 !important;
+    color: #232d39 !important;
   }
   .header-area .main-nav .nav li a:hover {
-    background: maroon !important;
-    color: whitesmoke!important;
+    background: #eee !important;
+    color: #656c74!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -584,33 +594,29 @@ banner
 .main-banner {
   background-image: url(../images/workshops.gif);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 20px 0px;
+  padding: 270px 0px 210px 0px;
   position: relative;
-  height: auto; /* Maintain aspect ratio */
-  width: auto; /* Maintain aspect ratio */
 }
 
 .main-banner h6 {
-  font-size: 30px;
+  font-size: 14px;
   color: #fff;
   font-weight: 300;
-  margin-top: 125px;
 }
 
 .main-banner h2 {
   font-size: 50px;
   font-weight: 800;
   color: #fff;
-  margin-top: 35px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .main-banner .next-show {
   position: absolute;
-  top: 70px;
+  top: -165px;
   left: 50%;
   transform: translateX(-50%);
   animation: move-up-down 3s infinite;
@@ -664,7 +670,7 @@ Show Events Carousel
 */
 .owl-show-events {
   position: relative;
-  margin-top: -15px;
+  margin-top: -60px;
 }
 
 .owl-show-events .owl-nav {
@@ -722,7 +728,7 @@ Amazing Venues
 .amazing-venues .left-content h4 {
   font-size: 30px;
   font-weight: 800;
-  color: maroon;
+  color: #2a2a2a;
   margin-bottom: 20px;
 }
 
@@ -731,20 +737,20 @@ Amazing Venues
 }
 
 .amazing-venues .right-content h5 i {
-  color: whitesmoke;
+  color: #2a2a2a;
   margin-right: 5px;
 }
 
 .amazing-venues .right-content h5 {
   font-size: 22px;
   font-weight: 800;
-  color: whitesmoke;
+  color: #2a2a2a;
   margin-bottom: 25px;
 }
 
 .amazing-venues .right-content span {
   font-size: 14px;
-  color: whitesmoke;
+  color: #2a2a2a;
   line-height: 25px;
   font-weight: 300;
   display: block;
@@ -838,7 +844,7 @@ Venues & Tickets
 }
 
 .venue-item .down-content .right-content .price {
-  background-color: (124,131,139,0.3);
+  background-color: rgba(124,131,139,0.3);
   display: inline-block;
   padding: 20px;
   margin-top: 25px;;
@@ -865,7 +871,7 @@ Coming Events
 */
 
 .coming-events {
-  background-color: rgb(27, 27, 27);
+  background-color: #656c74;
   padding: 120px 0px;
   position: relative;
 }
@@ -897,7 +903,7 @@ Coming Events
 }
 
 .event-item .down-content {
-  background-color: rgb(27, 27, 27);
+  background-color: #fff;
   padding: 30px;
 }
 
@@ -923,7 +929,7 @@ Coming Events
   width: 20px;
   text-align: center;
   font-size: 18px;
-  color: grey;
+  color: #858b93;
   display: inline-block;
 }
 
@@ -971,7 +977,7 @@ Subscribe
   display: inline-block;
   font-size: 14px;
   padding: 12px 18px;
-  background: linear-gradient( 135deg, grey 10%, black 100%);
+  background-color: #343a3e;
   color: #fff;
   text-align: center;
   font-weight: 500;
@@ -983,7 +989,7 @@ Subscribe
 }
 
 .subscribe form .main-dark-button:hover {
-  background: linear-gradient( 135deg, black 10%, grey 100%);
+  background-color: #656c74;
 }
 
 
@@ -1000,14 +1006,14 @@ footer {
 
 footer h4 {
    font-size: 20px;
-   color: whitesmoke;
+   color: #2a2a2a;
    font-weight: 700;
    margin-bottom: 25px;;
 }
 
 footer .address span {
   font-size: 14px;
-  color: whitesmoke;
+  color: #2a2a2a;
   line-height: 24px;
   font-weight: 300;
 }
@@ -1018,34 +1024,20 @@ footer .links {
 
 footer .links ul li a {
   font-size: 14px;
-  color: whitesmoke;
+  color: #2a2a2a;
   font-weight: 300;
   margin-bottom: 5px;
 }
 
-.sponsors {
-  position: relative;
-  width: 100%;
+footer .hours {
   text-align: right;
 }
 
-.sponsors ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.sponsors ul li {
+footer .hours ul li {
   font-size: 14px;
-  color: whitesmoke;
+  color: #2a2a2a;
   font-weight: 300;
   margin-bottom: 5px;
-}
-
-@media (max-width: 767px) {
-  .sponsors {
-    text-align: center;
-  }
 }
 
 footer .under-footer {
@@ -1085,11 +1077,11 @@ footer p.copyright {
 .sub-footer .menu ul li a {
   font-size: 14px;
   font-weight: 500;
-  color: whitesmoke;
+  color: #2a2a2a;
 }
 
 .sub-footer .menu ul li a:hover {
-  color: goldenrod;
+  color: #656c74;
 }
 
 .sub-footer .social-links {
@@ -1108,15 +1100,15 @@ footer p.copyright {
   display: inline-block;
   text-align: center;
   line-height: 30px;
-  background-color: beige;
+  background-color: #2a2a2a;
   border-radius: 50%;
-  color: black;
+  color: #fff;
   font-size: 14px;
   transition: all .3s;
 }
 
 .sub-footer .social-links ul li a:hover {
-  background-color: maroon;
+  background-color: #656c74;
 }
 
 
@@ -1127,32 +1119,27 @@ About Us Page
 */
 
 .page-heading-about {
-  background-image: url(../images/about_bg\(1\).jpg);
-  background-repeat: no-repeat;
+  background-image: url(../images/about_bg.jpg);
   background-size: cover;
-  text-align: center;
-  padding: 20px 0px;
-  position: relative;
-  height: 70vh; /* Maintain aspect ratio */
-  width: auto; /* Maintain aspect ratio */
+  background-repeat: no-repeat;
+  padding: 110px 0px 410px 0px;
 }
 
 .page-heading-about h2 {
   font-size: 50px;
   color: #fff;
   font-weight: 800;
-  margin-bottom: 25px;
-  margin-top: 100px;
+  margin-bottom: 15px;
 }
 
 .page-heading-about span {
-  font-size: 25px;
+  font-size: 20px;
   color: #fff;
   font-weight: 300;
 }
 
 .about-item {
-  margin-top: 10px;
+  margin-top: -282px;
 }
 
 .about-item .left-image img {
@@ -1207,16 +1194,16 @@ About Us Page
 }
 
 .about-upcoming-shows h2 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 800;
-  color: whitesmoke;
+  color: #2a2a2a;
   margin-bottom: 25px;
 }
 
 .about-upcoming-shows h4 {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
-  color: whitesmoke;
+  color: #2a2a2a;
   margin-bottom: 25px;;
 }
 
@@ -1231,7 +1218,7 @@ About Us Page
 }
 
 .about-upcoming-shows p {
-  margin-bottom: 10px;;
+  margin-bottom: 30px;;
 }
 
 .about-upcoming-shows .text-button {
@@ -1248,7 +1235,7 @@ About Us Page
 }
 
 .about-upcoming-shows .next-shows h4 i {
-  display: flexbox;
+  float: left;
   display: inline-block;
   margin-right: 10px;
   height: 30px;
@@ -1271,16 +1258,16 @@ About Us Page
 }
 
 .about-upcoming-shows .next-shows ul li h5 {
-  font-size: 25px;
+  font-size: 15px;
   font-weight: 700;
-  color: whitesmoke;
+  color: #2a2a2a;
   margin-bottom: 15px;;
 }
 
 .about-upcoming-shows .next-shows ul li span {
   font-size: 14px;
   font-weight: 300;
-  color: whitesmoke;
+  color: #2a2a2a;
 }
 
 .about-upcoming-shows .next-shows ul li .icon-button {
@@ -1304,16 +1291,16 @@ About Us Page
 }
 
 .also-like {
-  margin-top: 0px;
-  background-color: rgb(25, 25, 25);
-  padding-bottom: 10px;
+  margin-top: 110px;
+  background-color: #f0f0f1;
+  padding-bottom: 100px;
 }
 
 .also-like h2 {
   font-size: 30px;
   font-weight: 800;
-  color: whitesmoke;
-  margin-top: 10px;
+  color: #2a2a2a;
+  margin-top: 100px;
   margin-bottom: 40px;
 }
 
@@ -1358,58 +1345,52 @@ About Us Page
 }
 
 .also-like .like-item .down-content {
-  background-color: transparent;
+  background-color: #fff;
   padding: 30px;
 }
 
 .also-like .like-item .down-content span {
   font-size: 15px;
-  color: whitesmoke;
-  font-weight: 800;
+  color: #2a2a2a;
+  font-weight: 500;
   display: inline-block;
 }
 
 .also-like .like-item .down-content h4 {
   font-size: 22px;
-  font-weight: 600;
-  color: whitesmoke;
+  font-weight: 700;
+  color: #2a2a2a;
   margin-top: 10px;
 }
 
 
 /*
 ---------------------------------------------
-BAABFest 23 Page
+Rent Venue Page
 ---------------------------------------------
 */
 
 .page-heading-rent-venue {
-  background-image: url(../images/IMG_3841.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(../images/rent_venue_bg.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  padding: 110px 0px;
   text-align: center;
-  padding: 20px 0px;
-  position: relative;
-  height: 70vh; /* Maintain aspect ratio */
-  width: auto; /* Maintain aspect ratio */
 }
 
 .page-heading-rent-venue h2 {
   font-size: 50px;
-  color: whitesmoke;
-  font-weight: 1000;
+  color: #fff;
+  font-weight: 800;
   margin-bottom: 15px;
-  margin-top: 100px;
 }
 
 .page-heading-rent-venue span {
   font-size: 20px;
-  color: whitesmoke;
-  font-weight: 800;
+  color: #fff;
+  font-weight: 300;
   padding: 0px 250px;
-  display: flex;
-  text-align: center;
+  display: inline-block;
 }
 
 .rent-venue-tabs .heading-tabs {
@@ -1437,7 +1418,7 @@ BAABFest 23 Page
   width: 100%;
   display: inline-block;
   font-size: 14px;
-  color: whitesmoke;
+  color: #2a2a2a;
   font-weight: 500;
   transition: all 0.3s;
 }
@@ -1448,13 +1429,13 @@ BAABFest 23 Page
   border-bottom: none;
 }
 .rent-venue-tabs #tabs ul .ui-tabs-active a {
-  color: maroon;
+  color: #656c74;
   position: relative;
 }
 .rent-venue-tabs #tabs ul .ui-tabs-active a:after {
   width: 100%;
   height: 3px;
-  background-color: maroon;
+  background-color: #7c838b;
   content: '';
   left: 0;
   top: -32px;
@@ -1470,9 +1451,9 @@ BAABFest 23 Page
   transition: all 0.3s;
 }
 .rent-venue-tabs .tabs-content h4 {
-  font-size: 40px;
-  font-weight: 500;
-  color: maroon;
+  font-size: 30px;
+  font-weight: 700;
+  color: #2a2a2a;
   margin-bottom: 25px;
 }
 .rent-venue-tabs .tabs-content ul.list {
@@ -1485,13 +1466,13 @@ BAABFest 23 Page
 .rent-venue-tabs .tabs-content ul.list li {
   width: 28%;
   font-size: 14px;
-  color: whitesmoke;
+  color: #7c838b;
 }
 
 .rent-venue-tabs .tabs-content #map h5 {
   font-size: 22px;
   font-weight: 700;
-  color: whitesmoke;
+  color: #2a2a2a;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -1507,7 +1488,7 @@ BAABFest 23 Page
 .rent-venue-application .heading-text h4 {
   font-size: 22px;
   font-weight: 700;
-  color: whitesmoke;
+  color: #2a2a2a;
   margin-bottom: 50px;
 }
 
@@ -1570,14 +1551,11 @@ Shows Events Page
 */
 
 .page-heading-shows-events {
-  background-image: url(../images/workshops.gif);
-  background-repeat: no-repeat;
+  background-image: url(../images/shows_events_bg.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  padding: 110px 0px;
   text-align: center;
-  padding: 20px 0px;
-  position: relative;
-  height: auto; /* Maintain aspect ratio */
-  width: auto; /* Maintain aspect ratio */
 }
 
 .page-heading-shows-events h2 {
@@ -1596,12 +1574,12 @@ Shows Events Page
 }
 
 .shows-events-tabs {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #f0f0f1;
 }
 
 .shows-events-tabs .heading-tabs {
   padding: 20px 0px;
-  border-bottom: 1px maroon;
+  border-bottom: 1px dotted #d7dadc;
 }
 
 .shows-events-tabs .heading-tabs .main-dark-button {
@@ -1624,7 +1602,7 @@ Shows Events Page
   width: 100%;
   display: inline-block;
   font-size: 14px;
-  color: whitesmoke;
+  color: #2a2a2a;
   font-weight: 500;
   transition: all 0.3s;
 }
@@ -1648,7 +1626,7 @@ Shows Events Page
   position: absolute;
 }
 .shows-events-tabs #tabs ul .ui-tabs-active span {
-  color: maroon;
+  color: #1e1e1e;
 }
 .shows-events-tabs .tabs-content {
   margin-top: 80px;
@@ -1659,38 +1637,38 @@ Shows Events Page
 .shows-events-tabs .tabs-content h4 {
   font-size: 30px;
   font-weight: 700;
-  color: whitesmoke;
+  color: #2a2a2a;
   margin-bottom: 25px;
 }
 
 .shows-events-tabs .tabs-content .heading h2 {
   font-size: 30px;
-  color: whitesmoke;
+  color: #656c74;
   font-weight: 700;
   margin-bottom: 40px;
 }
 
 .shows-events-tabs .tabs-content .sidebar {
-  background-color: rgb(27, 27, 27, 0.5);
+  background-color: #fff;
   padding: 30px;
 }
 
 .shows-events-tabs .tabs-content .sidebar .heading-sidebar h4 {
   font-weight: 700;
-  color: whitesmoke;
+  color: #2a2a2a;
   font-size: 15px;
   line-height: 24px;
 }
 
 .shows-events-tabs .tabs-content .sidebar .heading-sidebar {
-  border-bottom: 1px block maroon;
+  border-bottom: 1px dotted #d7dadc;
 }
 
 .shows-events-tabs .tabs-content .sidebar .month h6,
 .shows-events-tabs .tabs-content .sidebar .category h6,
 .shows-events-tabs .tabs-content .sidebar .venues h6 {
   font-weight: 700;
-  color: whitesmoke;
+  color: #2a2a2a;
   font-size: 15px;
   margin-top: 30px;
 }
@@ -1701,22 +1679,22 @@ Shows Events Page
 
 .shows-events-tabs .tabs-content .sidebar .month,
 .shows-events-tabs .tabs-content .sidebar .category {
-  border-bottom: 1px maroon;
+  border-bottom: 1px dotted #d7dadc;
   padding-bottom: 30px;
 }
 
 .shows-events-tabs .tabs-content .sidebar ul li a {
   font-size: 14px;
-  color: whitesmoke!important;
+  color: #7c838b!important;
   font-weight: 400!important;
 }
 
 .shows-events-tabs .tabs-content .sidebar ul li a:hover {
-  color: maroon!important;
+  color: #343a3e!important;
 }
 
 .shows-events-tabs .tabs-content .event-item {
-  border: 1px maroon;
+  border: 1px dotted #d7dadc;
   margin-bottom: 30px;
 }
 
@@ -1732,7 +1710,7 @@ Shows Events Page
 .shows-events-tabs .tabs-content .event-item .left-content h4 {
   font-size: 20px;
   font-weight: 700;
-  color: maroon;
+  color: #2a2a2a;
   margin-bottom: 20px;
 }
 
@@ -1767,7 +1745,7 @@ Shows Events Page
 }
 .shows-events-tabs .tabs-content .event-item .right-content ul li h6 {
   font-weight: 700;
-  color: whitesmoke;
+  color: #2a2a2a;
   font-size: 15px;
   width: 100%;
   display: inline;
@@ -1775,7 +1753,6 @@ Shows Events Page
 }
 
 .shows-events-tabs .tabs-content .event-item .right-content ul li span {
-  color: maroon;
   font-size: 15px;
 }
 
@@ -1795,8 +1772,8 @@ Shows Events Page
   display: inline-block;
   font-size: 14px;
   padding: 12px 20px;
-  background-color: maroon;
-  color: whitesmoke;
+  background-color: #e6e7e8;
+  color: #2a2a2a;
   text-align: center;
   font-weight: 500;
   text-transform: capitalize;
@@ -1959,6 +1936,18 @@ Tickets Page
 .tickets-page .pagination ul li {
   display: inline-block;
   margin: 0px 10px!important;
+}
+
+.tickets-page .pagination ul li a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 12px 20px;
+  background-color: #e6e7e8;
+  color: #2a2a2a;
+  text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all .3s;
 }
 
 .tickets-page .pagination ul li a:hover,
@@ -2166,11 +2155,11 @@ Event Details Page
 .shows-events-schedule {
   margin-top: 0px;
   padding-bottom: 100px;
-  background-color: transparent;
+  background-color: #f0f0f1;
 }
 
 .shows-events-schedule ul li {
-  background-color: transparent;
+  background-color: #fff;
   padding: 30px 30px 25px 30px;
   margin-bottom: 30px;
 }
@@ -2241,7 +2230,7 @@ Event Details Page
   display: inline-block;
   font-size: 14px;
   padding: 12px 20px;
-  background-color: green;
+  background-color: #fff;
   color: #2a2a2a;
   text-align: center;
   font-weight: 500;
@@ -2522,6 +2511,45 @@ responsive
     width: 100%;
   }
 
+  /* Add this to your CSS file */
+
+/* For smaller screens (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  /* Adjust the layout for smaller screens */
+  .rent-venue-tabs .container {
+    padding: 20px;
+  }
+  .rent-venue-tabs .row {
+    flex-direction: column;
+  }
+  .rent-venue-tabs .col-lg-9, .rent-venue-tabs .col-lg-3 {
+    width: 100%;
+  }
+  .rent-venue-tabs .right-content {
+    padding: 20px;
+  }
+  .rent-venue-tabs #img {
+    margin: 20px auto;
+  }
+  .rent-venue-tabs .main-white-button, .rent-venue-tabs .text-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Further adjustments for even smaller screens */
+  .rent-venue-tabs .container {
+    padding: 10px;
+  }
+  .rent-venue-tabs .right-content {
+    padding: 10px;
+  }
+  .rent-venue-tabs #img {
+    width: 100%;
+    height: auto;
+  }
+}
   .pre-header {
     display: none;
   }
@@ -2539,4 +2567,37 @@ responsive
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px); } 
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 150px; /* adjust the height as needed */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-item p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.gallery-item a {
+  font-size: 14px;
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.gallery-item a:hover {
+  color: #23527c;
 }
