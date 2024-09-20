@@ -206,7 +206,7 @@ body {
 
 .text-button a {
   font-size: 14px;
-  color: #7c838b;
+  color: maroon;
   transition: all .3s;
 }
 
@@ -271,8 +271,9 @@ header
 
 .header-area .main-nav .logo {
   line-height: 80px;
-  color: #656c74;
-  font-size: 28px;
+  color: maroon;
+  padding-top: 20px;
+  font-size: 30px;
   font-weight: 700;
   float: left;
   -webkit-transition: all 0.3s ease 0s;
@@ -283,7 +284,7 @@ header
 
 .header-area .main-nav .logo em {
   font-style: normal;
-  color: #2a2a2a;
+  color: darkgoldenrod;
   font-weight: 900;
 }
 
@@ -322,7 +323,7 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #656c74!important;
+  color: maroon!important;
   opacity: 1;
 }
 
@@ -334,7 +335,7 @@ header
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: #656c74;
+  background-color: maroon;
   content: '';
   top: -20px;
   left: 0;
@@ -342,7 +343,7 @@ header
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #656c74!important;
+  color: maroon!important;
   opacity: 1;
 }
 
@@ -466,7 +467,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #656c74;
+  color: maroon;
 }
 
 @media (max-width: 1200px) {
@@ -488,7 +489,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #656c74!important;
+    color: maroon!important;
     opacity: 1;
   }
   .header-area {
@@ -543,7 +544,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #656c74!important;
+    color: maroon!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -695,7 +696,7 @@ Show Events Carousel
 .owl-show-events .owl-nav .owl-prev:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #7c838b;
+  color: maroon;
   font-size: 14px;
   content: '\f060';
 }
@@ -709,7 +710,7 @@ Show Events Carousel
 .owl-show-events .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #7c838b;
+  color: maroon;
   font-size: 14px;
   content: '\f061';
 }
@@ -783,7 +784,7 @@ Venues & Tickets
 }
 
 .venue-item .down-content {
-  background-color: #656c74;
+  background-color: maroon;
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -871,7 +872,7 @@ Coming Events
 */
 
 .coming-events {
-  background-color: #656c74;
+  background-color: maroon;
   padding: 120px 0px;
   position: relative;
 }
@@ -934,6 +935,38 @@ Coming Events
 }
 
 
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 150px; /* adjust the height as needed */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery-item p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.gallery-item a {
+  font-size: 14px;
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.gallery-item a:hover {
+  color: #23527c;
+}
 
 /*
 ---------------------------------------------
@@ -942,7 +975,7 @@ Subscribe
 */
 
 .subscribe {
-  background-color: #7c838b;
+  background-color: maroon;
   padding: 30px 0px;
 }
 
@@ -977,7 +1010,7 @@ Subscribe
   display: inline-block;
   font-size: 14px;
   padding: 12px 18px;
-  background-color: #343a3e;
+  background-color: darkred;
   color: #fff;
   text-align: center;
   font-weight: 500;
@@ -989,7 +1022,7 @@ Subscribe
 }
 
 .subscribe form .main-dark-button:hover {
-  background-color: #656c74;
+  background-color: red;
 }
 
 
@@ -1062,7 +1095,7 @@ footer p.copyright {
 
 .sub-footer .logo span em {
   font-style: normal;
-  color: goldenrod;
+  color: darkgoldenrod;
 }
 
 .sub-footer .menu {
@@ -1081,7 +1114,7 @@ footer p.copyright {
 }
 
 .sub-footer .menu ul li a:hover {
-  color: #656c74;
+  color: darkgoldenrod;
 }
 
 .sub-footer .social-links {
@@ -1108,7 +1141,7 @@ footer p.copyright {
 }
 
 .sub-footer .social-links ul li a:hover {
-  background-color: #656c74;
+  background-color: darkgoldenrod;
 }
 
 
@@ -1179,7 +1212,7 @@ About Us Page
 
 .about-item  .down-content span {
   font-size: 14px;
-  color: #7c838b;
+  color: maroon;
   font-weight: 300;
   display: block;
   margin-top: 25px;;
@@ -1278,7 +1311,7 @@ About Us Page
 .about-upcoming-shows .next-shows ul li .icon-button a {
   width: 50px;
   height: 50px;
-  background-color: #656c74;
+  background-color: maroon;
   color: #fff;
   display: inline-block;
   text-align: center;
@@ -1326,7 +1359,7 @@ About Us Page
   text-align: center;
   line-height: 30px;
   color: #fff;
-  background-color: #656c74;
+  background-color: maroon;
   border-radius: 50%;
   transition: all .3s;
 }
@@ -1429,13 +1462,13 @@ Rent Venue Page
   border-bottom: none;
 }
 .rent-venue-tabs #tabs ul .ui-tabs-active a {
-  color: #656c74;
+  color: maroon;
   position: relative;
 }
 .rent-venue-tabs #tabs ul .ui-tabs-active a:after {
   width: 100%;
   height: 3px;
-  background-color: #7c838b;
+  background-color: maroon;
   content: '';
   left: 0;
   top: -32px;
@@ -1466,7 +1499,7 @@ Rent Venue Page
 .rent-venue-tabs .tabs-content ul.list li {
   width: 28%;
   font-size: 14px;
-  color: #7c838b;
+  color: maroon;
 }
 
 .rent-venue-tabs .tabs-content #map h5 {
@@ -1541,7 +1574,7 @@ Rent Venue Page
 }
 
 .rent-venue-application form .main-dark-button:hover {
-  background-color: #656c74;
+  background-color: maroon;
 }
 
 /*
@@ -1613,13 +1646,13 @@ Shows Events Page
   border-bottom: none;
 }
 .shows-events-tabs #tabs ul .ui-tabs-active a {
-  color: #656c74;
+  color: maroon;
   position: relative;
 }
 .shows-events-tabs #tabs ul .ui-tabs-active a:after {
   width: 100%;
   height: 3px;
-  background-color: #7c838b;
+  background-color: maroon;
   content: '';
   left: 0;
   top: -32px;
@@ -1643,7 +1676,7 @@ Shows Events Page
 
 .shows-events-tabs .tabs-content .heading h2 {
   font-size: 30px;
-  color: #656c74;
+  color: maroon;
   font-weight: 700;
   margin-bottom: 40px;
 }
@@ -1685,7 +1718,7 @@ Shows Events Page
 
 .shows-events-tabs .tabs-content .sidebar ul li a {
   font-size: 14px;
-  color: #7c838b!important;
+  color: maroon!important;
   font-weight: 400!important;
 }
 
@@ -1798,7 +1831,7 @@ Tickets Page
 }
 
 .tickets-page .search-box {
-  background-color: #7c838b;
+  background-color: maroon;
   padding: 30px;
 }
 
@@ -1843,7 +1876,7 @@ Tickets Page
 }
 
 .tickets-page .search-box .main-dark-button:hover {
-  background-color: #656c74;
+  background-color: maroon;
 }
  
 .tickets-page .heading h2 {
@@ -1896,7 +1929,7 @@ Tickets Page
 
 .tickets-page .ticket-item .down-content span {
   font-size: 14px;
-  color: #656c74;
+  color: maroon;
   font-weight: 700;
 }
 
@@ -1916,7 +1949,7 @@ Tickets Page
 }
 
 .tickets-page .ticket-item .down-content ul li i {
-  color: #7c838b;
+  color: maroon;
   margin-right: 10px;
   width: 15px;
   height: 25px;
@@ -1986,7 +2019,7 @@ Ticket Details Page
 .ticket-details-page .right-content span {
   font-size: 14px;
   font-weight: 700;
-  color: #656c74;
+  color: maroon;
   display: inline-block;
   border-bottom: 1px solid #eee;
   width: 100%;
@@ -2010,7 +2043,7 @@ Ticket Details Page
 }
 
 .ticket-details-page .right-content ul li i {
-  color: #7c838b;
+  color: maroon;
   margin-right: 10px;
   width: 15px;
   height: 25px;
@@ -2141,7 +2174,7 @@ Ticket Details Page
   display: inline-block;
   font-size: 13px;
   text-transform: uppercase;
-  color: #656c74;
+  color: maroon;
   font-weight: 500;
 }
 
@@ -2173,7 +2206,7 @@ Event Details Page
 .shows-events-schedule ul li .title span {
   font-size: 14px;
   font-weight: 700;
-  color: #656c74;
+  color: maroon;
 }
 
 .shows-events-schedule ul li .time span {
@@ -2185,7 +2218,7 @@ Event Details Page
 }
 
 .shows-events-schedule ul li .time span i {
-  color: #7c838b;
+  color: maroon;
   margin-right: 10px;
   width: 15px;
   height: 25px;
@@ -2201,7 +2234,7 @@ Event Details Page
 }
 
 .shows-events-schedule ul li .place span i {
-  color: #7c838b;
+  color: maroon;
   margin-right: 10px;
   width: 15px;
   height: 25px;
@@ -2567,37 +2600,4 @@ responsive
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px); } 
-}
-
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 10px;
-}
-
-.gallery-item {
-  width: 100%;
-  height: 150px; /* adjust the height as needed */
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.gallery-item p {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.gallery-item a {
-  font-size: 14px;
-  color: #337ab7;
-  text-decoration: none;
-}
-
-.gallery-item a:hover {
-  color: #23527c;
 }
