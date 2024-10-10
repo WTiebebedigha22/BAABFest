@@ -1155,6 +1155,7 @@ About Us Page
 .page-heading-about {
   background-image: url(../images/about_bg.JPG);
   background-size: cover;
+  background-position: 55% 25%;
   background-repeat: no-repeat;
   padding: 110px 0px 410px 0px;
 }
@@ -2605,9 +2606,14 @@ responsive
 
 #fh5co-logo {
   display: flex;
-  align-items: center;
+  float: none;
+  align-items: left;
+  position: absolute;
+  padding: 2px;
 }
 
 #fh5co-logo .logo {
+  position: static;
+  float: none;
   margin-right: auto; /* add some space between the logo text and image */
 }
