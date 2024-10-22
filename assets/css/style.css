@@ -205,7 +205,7 @@ body {
 
 .text-button a {
   font-size: 14px;
-  color: #7c838b;
+  color: maroon;
   transition: all .3s;
 }
 
@@ -216,7 +216,7 @@ body {
 }
 
 .text-button a:hover {
-  color: #343a3e;
+  color: green;
 }
 
 .text-button a:hover i {
@@ -1372,10 +1372,10 @@ Rent Venue Page
 */
 
 .page-heading-rent-venue {
-  background-image: url(../images/rent_venue_bg.jpg);
+  background-image: url(../images/workshop.JPEG);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 110px 0px;
+  padding: 210px 30px;
   text-align: center;
 }
 
