@@ -308,7 +308,7 @@ header
   display: block;
   font-weight: 500;
   font-size: 14px;
-  color: #2a2a2a;
+  color: #656c74;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -321,7 +321,7 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #656c74!important;
+  color: maroon!important;
   opacity: 1;
 }
 
@@ -341,7 +341,7 @@ header
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #656c74!important;
+  color: maroon!important;
   opacity: 1;
 }
 
@@ -1372,7 +1372,7 @@ Rent Venue Page
 */
 
 .page-heading-rent-venue {
-  background-image: url(../images/workshops.jpg);
+  background-image: url(../images/workshop.JPEG);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 210px 30px;
@@ -1857,33 +1857,12 @@ Tickets Page
 }
 
 .tickets-page .ticket-item .thumb {
-  position: relative;
+  position:sticky;
 }
 
 .tickets-page .ticket-item .thumb img {
   width: 100%;
   overflow: hidden;
-}
-
-.tickets-page .ticket-item .thumb .price {
-  background-color: rgba(101,108,116,0.9);
-  display: inline-block;
-  padding: 20px;
-  position: absolute;
-  left: 30px;
-  bottom: 30px;
-}
-
-.tickets-page .ticket-item .thumb .price span {
-  color: #fff;
-  font-size: 14px;
-  line-height: 25px;
-}
-
-.tickets-page .ticket-item .thumb .price span em {
-  font-weight: 700;
-  font-size: 20px;
-  font-style: normal;
 }
 
 .tickets-page .ticket-item {
